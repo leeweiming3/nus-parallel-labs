@@ -43,7 +43,6 @@ void *producer(void *threadid)
 			pthread_cond_signal(&nonfull);
 		}
 		pthread_mutex_unlock(&buf_lock);
-		sleep(rand()%2);
 	}
 
 	// Write producer code here
